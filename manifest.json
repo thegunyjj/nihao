@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Vercel Deploy",
+  "version": "1.0.0",
+  "description": "Upload code folders to GitHub and auto-deploy to Vercel",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://api.github.com/*", "https://api.vercel.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.jpg",
+      "48": "icons/icon48.jpg",
+      "128": "icons/icon128.jpg"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.jpg",
+    "48": "icons/icon48.jpg",
+    "128": "icons/icon128.jpg"
+  }
+}
